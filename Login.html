@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/Estilo_login.css">
+    <title>Entri Dashboard</title>
+</head>
+
+<body>
+    <div class="container-login">
+        <form>
+            <img src="Recursos/Imagens/Logo Entri Fundo Branco.jpg">
+            <h3>Dashboard</h3>
+            <input id="user" type="text" placeholder="Usuário">
+            <input id="pinInput" type="password" placeholder="Senha">
+            <input class="enviar" type="submit" onclick="verifyPin(); return false">
+            <div id="loginError" class="erro">
+                <p id="error-message" style="color: rgb(253, 72, 72); display: none;">Senha ou Usuário Inválida</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="recursos/login.js"></script>
+
+ 
+</body>
+
+</html>
