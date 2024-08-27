@@ -5,7 +5,7 @@ function verifyPin() {
     const correctUser = 'admin';
 
     if (pin === correctPIN && user === correctUser) {
-        window.location.href = "http://https://entriti.github.io/DashboardNovo/dashboard.html#";
+        window.location.href = "https://entriti.github.io/DashboardNovo/dashboard.html#";
     } else {
         document.getElementById('error-message').style.display = 'block';
     }
