@@ -45,6 +45,6 @@ function handleError() {
 }
 
 function logout(){
-    window.location.href = "http://127.0.0.1:5500/Dashboard-Entri/Login.html?";
+    window.location.href = "https://entriti.github.io/DashboardNovo/Login";
     console.log('oi')
 }
