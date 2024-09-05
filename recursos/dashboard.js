@@ -6,24 +6,35 @@ function ativarItemCustos(){
     document.getElementById('Vendas').classList.remove('active');
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.add('active');
+    document.getElementById('RH').classList.remove('active');
 }
 function ativarItemOrdens(){
     document.getElementById('Ordens').classList.add('active');
     document.getElementById('Vendas').classList.remove('active');
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
+    document.getElementById('RH').classList.remove('active');
 }
 function ativarItemVendas(){
     document.getElementById('Ordens').classList.remove('active');
     document.getElementById('Vendas').classList.add('active');
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
+    document.getElementById('RH').classList.remove('active');
+}
+function ativarItemRH(){
+    document.getElementById('Ordens').classList.remove('active');
+    document.getElementById('Vendas').classList.add('active');
+    document.getElementById('Taxas').classList.remove('active');
+    document.getElementById('Custos').classList.remove('active');
+    document.getElementById('RH').classList.remove('active');
 }
 function ativarItemTaxas(){
     document.getElementById('Ordens').classList.remove('active');
     document.getElementById('Vendas').classList.remove('active');
     document.getElementById('Taxas').classList.add('active');
     document.getElementById('Custos').classList.remove('active');
+    document.getElementById('RH').classList.remove('active');
 }
 
 function showDashboard(url) {
