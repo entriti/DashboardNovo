@@ -24,10 +24,10 @@ function ativarItemVendas(){
 }
 function ativarItemRH(){
     document.getElementById('Ordens').classList.remove('active');
-    document.getElementById('Vendas').classList.add('active');
+    document.getElementById('Vendas').classList.remove('active');
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
-    document.getElementById('RH').classList.remove('active');
+    document.getElementById('RH').classList.add('active');
 }
 function ativarItemTaxas(){
     document.getElementById('Ordens').classList.remove('active');
