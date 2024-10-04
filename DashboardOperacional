@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/Estilo_dashboard.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!--Side bar-->
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img id="user_avatar" src="recursos/Imagens/Logo Entri - Fundo Azul.jpg">
+                <span class="item-description">Bi</span>
+                </p>
+            </div>
+
+            <ul id="sidebar_items">
+                <li id="Ordens" class="side-item ">
+                    <a href="#" alt="Ordens de Serviço"
+                        onclick="showDashboard('https://app.powerbi.com/view?r=eyJrIjoiODE2MWY5NWMtMzgwMS00MWQ3LWFmMzMtMjJmYzQ3ZDkxNGFmIiwidCI6IjYxODE1Mjg2LWFjN2QtNDYyZi04NWZhLWVmZTFmMDRjNWI5YiJ9'); ativarItemOrdens();">
+                        <i class="fa-solid fa-wrench"></i>
+                        <span class="item-description">
+                            Ordens de Serviço
+                        </span>
+                    </a>
+
+                </li>
+                <li id="Vendas" class="side-item">
+                    <a href="#" alt="Vendas do Atendimento"
+                        onclick="showDashboard('https://app.powerbi.com/view?r=eyJrIjoiYjViYmFiOGItOTg4MS00YzExLTg0MzYtYzRlNDk2YzFlOTU2IiwidCI6IjYxODE1Mjg2LWFjN2QtNDYyZi04NWZhLWVmZTFmMDRjNWI5YiJ9'); ativarItemVendas();">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <span class="item-description">
+                            Vendas
+                            do atendimento
+                        </span>
+                    </a>
+
+                </li>
+                <li id="Taxas" class="side-item">
+                    <a href="#" alt="Taxas do Atendimento"
+                        onclick="showDashboard('https://app.powerbi.com/view?r=eyJrIjoiM2RkNTc5M2MtMjcyZC00YWEwLWEwODUtNDAzNWRlZTlhMmQwIiwidCI6IjYxODE1Mjg2LWFjN2QtNDYyZi04NWZhLWVmZTFmMDRjNWI5YiJ9'); ativarItemTaxas();">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        <span class="item-description">
+                            Taxas
+                            do atendimento
+                        </span>
+                    </a>
+
+                </li>
+                <li id="Custos" class="side-item ">
+                    <a href="#" alt="Custos O.S"
+                        onclick="showDashboard('https://app.powerbi.com/view?r=eyJrIjoiNzEwYzlmNWYtNDJlZC00ZjMxLWFmOTAtNTViYWVhYzM3MTIyIiwidCI6IjYxODE1Mjg2LWFjN2QtNDYyZi04NWZhLWVmZTFmMDRjNWI5YiJ9'); ativarItemCustos();">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span class="item-description">
+                            Custos O.S
+                        </span>
+                    </a>
+
+                </li>
+          
+            </ul>
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button onclick="logout()" id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    logout
+                </span>
+            </button>
+
+        </div>
+    </nav>
+    <main>
+        <div class="content" id="content">
+            <div class="loading" id="loadingMessage">Carregando...</div>
+            <iframe id="dashboardFrame" src='https://app.powerbi.com/view?r=eyJrIjoiODE2MWY5NWMtMzgwMS00MWQ3LWFmMzMtMjJmYzQ3ZDkxNGFmIiwidCI6IjYxODE1Mjg2LWFjN2QtNDYyZi04NWZhLWVmZTFmMDRjNWI5YiJ9' onload="onIframeLoad()" onerror="handleError()"></iframe>
+        </div>
+    </main>
+    <script src="recursos/dashboard.js"></script>
+
+</body>
+
+</html>
