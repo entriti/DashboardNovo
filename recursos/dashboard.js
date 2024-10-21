@@ -47,7 +47,7 @@ function ativarItemCustoCompras(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('Compras').classList.add('active');
+    document.getElementById('Compras').classList.add('active');}
 
 function showDashboard(url) {
     const iframe = document.getElementById('dashboardFrame');
