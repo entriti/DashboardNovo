@@ -7,7 +7,7 @@ function ativarItemCustos(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.add('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('CustoCompras').classList.remove('active');
+    document.getElementById('Compras').classList.remove('active');
 }
 function ativarItemOrdens(){
     document.getElementById('Ordens').classList.add('active');
@@ -15,7 +15,7 @@ function ativarItemOrdens(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('CustoCompras').classList.remove('active');
+    document.getElementById('Compras').classList.remove('active');
 }
 function ativarItemVendas(){
     document.getElementById('Ordens').classList.remove('active');
@@ -23,7 +23,7 @@ function ativarItemVendas(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('CustoCompras').classList.remove('active');
+    document.getElementById('Compras').classList.remove('active');
 }
 function ativarItemRH(){
     document.getElementById('Ordens').classList.remove('active');
@@ -31,7 +31,7 @@ function ativarItemRH(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.add('active');
-    document.getElementById('CustoCompras').classList.remove('active');
+    document.getElementById('Compras').classList.remove('active');
 }
 function ativarItemTaxas(){
     document.getElementById('Ordens').classList.remove('active');
@@ -39,7 +39,7 @@ function ativarItemTaxas(){
     document.getElementById('Taxas').classList.add('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('CustoCompras').classList.remove('active');
+    document.getElementById('Compras').classList.remove('active');
 }
 function ativarItemCustoCompras(){
     document.getElementById('Ordens').classList.remove('active');
@@ -47,7 +47,7 @@ function ativarItemCustoCompras(){
     document.getElementById('Taxas').classList.remove('active');
     document.getElementById('Custos').classList.remove('active');
     document.getElementById('RH').classList.remove('active');
-    document.getElementById('CustoCompras').classList.add('active');
+    document.getElementById('Compras').classList.add('active');
 }
 
 function showDashboard(url) {
