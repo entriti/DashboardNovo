@@ -41,7 +41,7 @@ function ativarItemTaxas(){
     document.getElementById('RH').classList.remove('active');
     document.getElementById('Compras').classList.remove('active');
 }
-function ativarItemCustoCompras(){
+function ativarItemCompras(){
     document.getElementById('Ordens').classList.remove('active');
     document.getElementById('Vendas').classList.remove('active');
     document.getElementById('Taxas').classList.remove('active');
