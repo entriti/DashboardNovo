@@ -3,7 +3,7 @@ function verifyPin() {
     const user = document.getElementById('user').value;
 
     const credentials = [
-        { user: 'admin', pin: 'madira', url: 'https://entriti.github.io/DashboardNovo/dashboard.html#' },
+        { user: 'admin', pin: 'madira', url: 'https://entriti.github.io/DashboardNovo/dashboardadmin.html#' },
         { user: 'operacional', pin: 'ope789', url: 'https://entriti.github.io/DashboardNovo/operacional.html#' },
     ];
 
